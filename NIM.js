@@ -35,6 +35,7 @@ function switchPlayers() {
     }
 }
 
+/*
 function playerAction() {
     var move = parseInt(prompt("1, 2, or 3"));
     if (move == 1) {
@@ -47,6 +48,15 @@ function playerAction() {
         remove(3);
         switchPlayers();
     } 
+}
+*/
+
+function playerAction() {
+    var move = parseInt(prompt("1, 2, or 3"));
+    if (move == 1 || move == 2 || move == 3) {
+        remove(move);
+        switchPlayers();
+    }        
 }
 
 function checkVictory() {
